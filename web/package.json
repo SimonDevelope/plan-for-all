@@ -7,6 +7,15 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  "scripts": {
+    "dev": "webpack-dev-server --config config/webpack.dev.js --open",
+    "prod": "webpack-dev-server --config config/webpack.prod.js",
+    "build:dev": "webpack --config config/webpack.dev.js",
+    "build:prod": "webpack --config config/webpack.prod.js"
+  },
+  "browserslist": [
+    "ie 11"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.18.6",
     "@babel/core": "^7.18.6",

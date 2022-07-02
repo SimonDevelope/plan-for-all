@@ -17,7 +17,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: `${path.resolve(__dirname, "../src/public")}/index.html`,
     }),
-    new webpack.ProviderPlugin({
+    new webpack.ProvidePlugin({
       React: "react",
     }),
   ],
